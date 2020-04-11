@@ -1,6 +1,6 @@
 class Main {
 
-    companion object : ICallbakc{
+    companion object : ICallback{
         @JvmStatic
         fun main(args : Array<String>){
             var input : String
@@ -24,8 +24,8 @@ class Main {
                     }
                 }
             }while(input!="2")
-//            val pilihan = listOf("batu","gunting","kertas")
-//            val pilihanComputer = pilihan.random()
+            val pilihan = listOf("batu","gunting","kertas")
+            val pilihanComputer = pilihan.random().toUpperCase()
         }
         fun menuPersegi(){
             print("Masukan panjang sisi : ")
@@ -35,10 +35,12 @@ class Main {
             controller.calculateArea()
         }
 
-
-
         override fun showResult(result: Int) {
             println("Luas : $result")
         }
+
+
+
+
     }
 }
