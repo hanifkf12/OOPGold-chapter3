@@ -7,7 +7,7 @@ class Main {
             do {
                 println("Program hitung bangun datar")
                 println("===========================")
-                println("Pilihan Menu : ")
+                println("Menu : ")
                 println("1. Hitung persegi")
                 println("2. Exit")
                 print("Masukan Pilihan Anda : ")
